@@ -4,10 +4,14 @@
 \alias{compareRNASeqInChip}
 \title{Compare sequences to chip oligos}
 \usage{
-compareRNASeqInChip(rnaSeqCandidateSequences)
+compareRNASeqInChip(rnaSeqCandidateSequences, type = "global-local", ...)
 }
 \arguments{
+\item{...}{further arguments to pairwiseAlignment method}
+
 \item{character}{vector of sequences to be analysed}
+
+\item{character}{vector of mapping type for pairwiseAlignment method (default: global-local means global oligo and local in the RNA-Seq)}
 }
 \value{
 data.frame with the closest match to each sequence
